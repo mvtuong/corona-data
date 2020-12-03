@@ -55,7 +55,6 @@ const nameStandards = {
   "DRC":"Congo",
   "The Democratic Republic of Congo":"Congo",
   "Democratic Republic of the Congo":"Congo",
-  "Dem. Rep. Congo":"Congo",
   "Congo (Brazzaville)":"Congo (Brazzaville)",
   "The Bahamas":"Bahamas",
   "Bahamas, The":"Bahamas",
