@@ -107,6 +107,10 @@ app.get('/', cors(), (req, res) => {
 
   if (!historyData) {
     res.send('NOT_READY');
+    cronJob();
+    setInterval(() => {
+      cronJob();
+    }, 300000); // Every 5 minutes
   } else {
     res.send(historyData);
   }
