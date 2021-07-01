@@ -106,11 +106,11 @@ app.get('/', cors(), (req, res) => {
   console.log(msg, req.get('origin'), Date.now());
 
   if (!historyData) {
-    res.send('NOT_READY');
     cronJob();
     setInterval(() => {
       cronJob();
     }, 300000); // Every 5 minutes
+    res.send('NOT_READY');
   } else {
     res.send(historyData);
   }
